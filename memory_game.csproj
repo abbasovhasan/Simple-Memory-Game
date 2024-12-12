@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F333FB5-0357-4DB7-8F2C-DD6EB33D59A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>memory_game</RootNamespace>
+    <AssemblyName>memory_game</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Coffee.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utils.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHallFame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHallFame.Designer.cs">
+      <DependentUpon>FormHallFame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame.Designer.cs">
+      <DependentUpon>FormNewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHallFame.resx">
+      <DependentUpon>FormHallFame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame.resx">
+      <DependentUpon>FormNewGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Game.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Coffee.ico" />
+    <None Include="Resources\smile.png" />
+    <None Include="Resources\match.png" />
+    <None Include="Resources\fail.png" />
+    <None Include="Resources\faca.png" />
+    <None Include="Resources\tada.wav" />
+    <None Include="Resources\chimes.wav" />
+    <None Include="Resources\Windows XP Restore.wav" />
+    <None Include="Resources\sound_on.gif" />
+    <None Include="Resources\sound_off.gif" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\blocks145.png" />
+    <None Include="Resources\blocks144.png" />
+    <None Include="Resources\blocks143.png" />
+    <None Include="Resources\blocks142.png" />
+    <None Include="Resources\blocks141.png" />
+    <None Include="Resources\blocks140.png" />
+    <None Include="Resources\blocks139.png" />
+    <None Include="Resources\blocks138.png" />
+    <None Include="Resources\blocks137.png" />
+    <None Include="Resources\blocks136.png" />
+    <None Include="Resources\blocks135.png" />
+    <None Include="Resources\blocks134.png" />
+    <None Include="Resources\blocks133.png" />
+    <None Include="Resources\blocks132.png" />
+    <None Include="Resources\blocks131.png" />
+    <None Include="Resources\blocks130.png" />
+    <None Include="Resources\blocks129.png" />
+    <None Include="Resources\blocks128.png" />
+    <None Include="Resources\blocks127.png" />
+    <None Include="Resources\blocks126.png" />
+    <None Include="Resources\blocks125.png" />
+    <None Include="Resources\blocks124.png" />
+    <None Include="Resources\blocks123.png" />
+    <None Include="Resources\blocks122.png" />
+    <None Include="Resources\blocks121.png" />
+    <None Include="Resources\blocks120.png" />
+    <None Include="Resources\blocks119.png" />
+    <None Include="Resources\blocks118.png" />
+    <None Include="Resources\blocks117.png" />
+    <None Include="Resources\blocks116.png" />
+    <None Include="Resources\blocks115.png" />
+    <None Include="Resources\blocks114.png" />
+    <None Include="Resources\blocks113.png" />
+    <None Include="Resources\blocks112.png" />
+    <None Include="Resources\blocks111.png" />
+    <None Include="Resources\blocks110.png" />
+    <None Include="Resources\blocks109.png" />
+    <None Include="Resources\blocks108.png" />
+    <None Include="Resources\blocks107.png" />
+    <None Include="Resources\blocks106.png" />
+    <None Include="Resources\blocks105.png" />
+    <None Include="Resources\blocks104.png" />
+    <None Include="Resources\blocks103.png" />
+    <None Include="Resources\blocks102.png" />
+    <None Include="Resources\blocks101.png" />
+    <None Include="Resources\blocks100.png" />
+    <None Include="Resources\blocks99.png" />
+    <None Include="Resources\blocks98.png" />
+    <None Include="Resources\blocks97.png" />
+    <None Include="Resources\blocks96.png" />
+    <None Include="Resources\blocks95.png" />
+    <None Include="Resources\blocks94.png" />
+    <None Include="Resources\blocks93.png" />
+    <None Include="Resources\blocks92.png" />
+    <None Include="Resources\blocks91.png" />
+    <None Include="Resources\blocks90.png" />
+    <None Include="Resources\blocks89.png" />
+    <None Include="Resources\blocks88.png" />
+    <None Include="Resources\blocks87.png" />
+    <None Include="Resources\blocks86.png" />
+    <None Include="Resources\blocks85.png" />
+    <None Include="Resources\blocks84.png" />
+    <None Include="Resources\blocks83.png" />
+    <None Include="Resources\blocks82.png" />
+    <None Include="Resources\blocks81.png" />
+    <None Include="Resources\blocks79.png" />
+    <None Include="Resources\blocks78.png" />
+    <None Include="Resources\blocks77.png" />
+    <None Include="Resources\blocks76.png" />
+    <None Include="Resources\blocks75.png" />
+    <None Include="Resources\blocks74.png" />
+    <None Include="Resources\blocks73.png" />
+    <None Include="Resources\blocks72.png" />
+    <None Include="Resources\blocks71.png" />
+    <None Include="Resources\blocks70.png" />
+    <None Include="Resources\blocks68.png" />
+    <None Include="Resources\blocks67.png" />
+    <None Include="Resources\blocks66.png" />
+    <None Include="Resources\blocks65.png" />
+    <None Include="Resources\blocks64.png" />
+    <None Include="Resources\blocks63.png" />
+    <None Include="Resources\blocks62.png" />
+    <None Include="Resources\blocks61.png" />
+    <None Include="Resources\blocks60.png" />
+    <None Include="Resources\blocks59.png" />
+    <None Include="Resources\blocks58.png" />
+    <None Include="Resources\blocks57.png" />
+    <None Include="Resources\blocks56.png" />
+    <None Include="Resources\blocks55.png" />
+    <None Include="Resources\blocks54.png" />
+    <None Include="Resources\blocks53.png" />
+    <None Include="Resources\blocks52.png" />
+    <None Include="Resources\blocks51.png" />
+    <None Include="Resources\blocks50.png" />
+    <None Include="Resources\blocks49.png" />
+    <None Include="Resources\blocks48.png" />
+    <None Include="Resources\blocks47.png" />
+    <None Include="Resources\blocks46.png" />
+    <None Include="Resources\blocks45.png" />
+    <None Include="Resources\blocks44.png" />
+    <None Include="Resources\blocks43.png" />
+    <None Include="Resources\blocks42.png" />
+    <None Include="Resources\blocks41.png" />
+    <None Include="Resources\blocks40.png" />
+    <None Include="Resources\blocks39.png" />
+    <None Include="Resources\blocks38.png" />
+    <None Include="Resources\blocks37.png" />
+    <None Include="Resources\blocks36.png" />
+    <None Include="Resources\blocks35.png" />
+    <None Include="Resources\blocks34.png" />
+    <None Include="Resources\blocks33.png" />
+    <None Include="Resources\blocks32.png" />
+    <None Include="Resources\blocks31.png" />
+    <None Include="Resources\blocks30.png" />
+    <None Include="Resources\blocks29.png" />
+    <None Include="Resources\blocks28.png" />
+    <None Include="Resources\blocks27.png" />
+    <None Include="Resources\blocks26.png" />
+    <None Include="Resources\blocks25.png" />
+    <None Include="Resources\blocks24.png" />
+    <None Include="Resources\blocks23.png" />
+    <None Include="Resources\blocks22.png" />
+    <None Include="Resources\blocks21.png" />
+    <None Include="Resources\blocks20.png" />
+    <None Include="Resources\blocks19.png" />
+    <None Include="Resources\blocks18.png" />
+    <None Include="Resources\blocks17.png" />
+    <None Include="Resources\blocks16.png" />
+    <None Include="Resources\blocks15.png" />
+    <None Include="Resources\blocks14.png" />
+    <None Include="Resources\blocks13.png" />
+    <None Include="Resources\blocks12.png" />
+    <None Include="Resources\blocks11.png" />
+    <None Include="Resources\blocks10.png" />
+    <None Include="Resources\blocks9.png" />
+    <None Include="Resources\blocks8.png" />
+    <None Include="Resources\blocks7.png" />
+    <None Include="Resources\blocks6.png" />
+    <None Include="Resources\blocks5.png" />
+    <None Include="Resources\blocks4.png" />
+    <None Include="Resources\blocks3.png" />
+    <None Include="Resources\blocks2.png" />
+    <None Include="Resources\blocks1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
